@@ -1,24 +1,19 @@
 project:
   type: website
   output-dir: docs
-  resources: 
+  resources:
     - "files/"
-  pre-render:
-    - python files/scripts/xlsx_to_yml.py
-  post-render:
-    # Only runs fix-links when media.qmd changed or media.html still needs patching
-    - python files/scripts/fix-links-if-media-changed.py docs/media.html media.qmd
 
 # Meta
-description-meta: "Wei Jin is an assistant professor at the School of Economics, Nankai University. His research interests include international economics, international trade, and international business."
+description-meta: "Wei Jin's personal academic website."
 author-meta: "Wei Jin"
 
 website:
   title: "Wei Jin"
   image: "/files/wei-jin-profile.jpeg"
-  description: "Wei Jin is an assistant professor at the School of Economics, Nankai University. His research interests include international economics, international trade, and international business."
+  description: "Wei Jin's personal academic website."
   llms-txt: true
- 
+
   navbar:
     background: light
 
@@ -32,9 +27,10 @@ website:
           - text: Events
             href: posts.qmd#category=event
           - text: Now
-            href: now.qmd       
+            href: now.qmd
           - text: Contact
-            href: contact.qmd             
+            href: contact.qmd
+
       - text: Research
         menu:
           - text: List of Publications
@@ -44,86 +40,68 @@ website:
           - text: Commentary
             href: posts.qmd#category=commentary
           - text: Recognition
-            href: posts.qmd#category=recognition  
+            href: posts.qmd#category=recognition
           - text: Grants
             href: https://weijinsite.weebly.com/
-            target: _blank                                  
+            target: _blank
+
       - text: Teaching
         href: teaching.qmd
+
       - text: Outreach
         menu:
-        - text: Policy Engagement
-          href: posts.qmd#category=outreach 
-        - text: Policy Citations
-          href: notable-policy-citations.qmd          
-        - text: Presentations
-          href: posts.qmd#category=presentation       
-        - text: Testimony
-          href: posts.qmd#category=testimony
-        - text: Media
-          href: media.qmd        
-        - text: Notes
-          href: notes.qmd          
+          - text: Policy Engagement
+            href: posts.qmd#category=outreach
+          - text: Policy Citations
+            href: notable-policy-citations.qmd
+          - text: Presentations
+            href: posts.qmd#category=presentation
+          - text: Testimony
+            href: posts.qmd#category=testimony
+          - text: Media
+            href: media.qmd
+          - text: Notes
+            href: notes.qmd
+
       - text: Other links
         href: https://weijinsite.weebly.com/
         target: _blank
+
       - text: 中文
         href: cn.qmd
 
-    right: 
+    right:
       - text: "**CV**"
         href: files/Wei-Jin-CV.pdf
-        target: _blank 
+        target: _blank
       - icon: github
         href: https://github.com/peiyang1009/peiyang1009.github.io
         target: _blank
       - text: "{{< fa solid globe >}}"
         href: https://weijinsite.weebly.com/
         target: _blank
-#      - icon: twitter-x 
-#        href: https://twitter.com/
-#        target: _blank        
       - icon: rss
         href: posts.xml
         target: _blank
-  
+
   page-navigation: true
-  
-  page-footer: 
+
+  page-footer:
     center: "[Wei Jin](https://peiyang1009.github.io) &copy; <script>document.write(new Date().getFullYear())</script>"
-    # left: "[Wei Jin](https://peiyang1009.github.io) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    # right:  
-    #   - icon: github
-    #     href: https://github.com/peiyang1009/peiyang1009.github.io
-    #     target: _blank
-    #   - text: "{{< fa solid globe >}}" 
-    #     href: https://weijinsite.weebly.com/
-    #     target: _blank
-    #   - icon: rss
-    #     href: posts.xml
-    #     target: _blank  
-  
+
   search:
     location: navbar
     type: textbox
-  
-  reader-mode: false
 
+  reader-mode: false
   draft-mode: unlinked
-  
+
   repo-url: https://github.com/peiyang1009/peiyang1009.github.io
-#  repo-actions: [edit, issue, source]
-  
+
   open-graph: true
-  
-  twitter-card: true 
-#  card-style: summary      
-  
+  twitter-card: true
+
   site-url: "https://peiyang1009.github.io"
-  
-  google-analytics:
-    tracking-id: ""  # Add your own tracking ID later if needed
-    anonymize-ip: true 
 
 bibliography: references.bib
 
