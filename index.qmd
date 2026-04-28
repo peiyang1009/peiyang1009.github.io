@@ -7,7 +7,7 @@ subtitle: |
   Nankai University \
   Email: wei.jin@nankai.edu.cn
 description-meta: "Wei Jin is an Assistant Professor at the Center for Transnational Studies and Institute of International Economics, School of Economics, Nankai University. His research fields include international economics, international trade, and international business."
-image: "files/profile/wei-jin-profile.jpeg"
+image: "files/wei-jin-profile.jpeg"
 page-navigation: false
 toc: false
 #sidebar: false
