@@ -64,7 +64,7 @@ website:
           href: media.qmd        
         - text: Notes
           href: notes.qmd          
-      - text: Website
+      - text: Other links
         href: https://weijinsite.weebly.com/
         target: _blank
       - text: 中文
