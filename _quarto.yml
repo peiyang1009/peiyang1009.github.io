@@ -1,131 +1,48 @@
 project:
   type: website
   output-dir: docs
-  resources: 
+  resources:
     - "files/"
-  pre-render:
-    - python files/scripts/xlsx_to_yml.py
-  post-render:
-    # Only runs fix-links when media.qmd changed or media.html still needs patching
-    - python files/scripts/fix-links-if-media-changed.py docs/media.html media.qmd
+  render:
+    - index.qmd
+    - publications.qmd
+    - contact.qmd
 
 # Meta
-description-meta: "Dr. Gang He is an energy scholar, researcher, and teacher. He studies and teaches energy systems, energy and climate policy, and clean energy transition. Keywords: Energy systems analysis, energy and climate policy, clean energy transition, decarbonization, and carbon neutrality"
-author-meta: "Gang He"
+description-meta: "Wei Jin's personal academic website."
+author-meta: "Wei Jin"
 
 website:
-  title: "Dr. Gang He"
-  image: "/files/gang-he-profile.jpeg"
-  description: "Dr. Gang He is an energy scholar, researcher, and teacher. He studies and teaches energy systems, energy and climate policy, and clean energy transition."
-  llms-txt: true
- 
+  title: "Wei Jin"
+  description: "Wei Jin's personal academic website."
+  site-url: "https://peiyang1009.github.io"
+  repo-url: "https://github.com/peiyang1009/peiyang1009.github.io"
+
   navbar:
     background: light
 
     left:
-#      - text: Home
-#        href: index.qmd
-      - text: About
-        menu:
-          - text: News
-            href: posts.qmd#category=news
-          - text: Events
-            href: posts.qmd#category=event
-          - text: Now
-            href: now.qmd       
-          - text: Contact
-            href: contact.qmd             
+      - text: Home
+        href: index.qmd
       - text: Research
-        menu:
-          - text: List of Publications
-            href: publications.qmd
-          - text: Selected Papers
-            href: posts.qmd#category=paper
-          - text: Commentary
-            href: posts.qmd#category=commentary
-          - text: Recognition
-            href: posts.qmd#category=recognition  
-          - text: Grants
-            href: https://deeppolicylab.github.io/projects.html
-            target: _blank                                  
-      - text: Teaching
-        href: teaching.qmd
-      - text: Outreach
-        menu:
-        - text: Policy Engagement
-          href: posts.qmd#category=outreach 
-        - text: Policy Citations
-          href: notable-policy-citations.qmd          
-        - text: Presentations
-          href: posts.qmd#category=presentation       
-        - text: Testimony
-          href: posts.qmd#category=testimony
-        - text: Media
-          href: media.qmd        
-        - text: Notes
-          href: notes.qmd          
-      - text: Deep Policy Lab
-        href: https://deeppolicylab.github.io/
-        target: _blank
-      - text: 中文
-        href: cn.qmd
+        href: publications.qmd
+      - text: Contact
+        href: contact.qmd
 
-    right: 
-      - text: "**CV**"
-        href: files/Gang-He-CV.pdf
-        target: _blank 
-      - icon: github
-        href: https://github.com/drganghe
-        target: _blank
-      - text: "{{< fa brands bluesky >}}"
-        href: https://bsky.app/profile/hegang.bsky.social
-        target: _blank
-#      - icon: twitter-x 
-#        href: https://twitter.com/DrGangHe
-#        target: _blank        
-      - icon: rss
-        href: posts.xml
-        target: _blank
-  
   page-navigation: true
-  
-  page-footer: 
-    center: "[Gang He](http://drganghe.github.io) &copy; <script>document.write(new Date().getFullYear())</script>"
-    # left: "[Gang He](http://drganghe.github.io) &copy; <script>document.write(new Date().getFullYear())</script>" 
-    # right:  
-    #   - icon: github
-    #     href: https://github.com/drganghe/drganghe.github.io
-    #     target: _blank
-    #   - text: "{{< fa brands bluesky >}}" 
-    #     href: https://bsky.app/profile/hegang.bsky.social
-    #     target: _blank
-    #   - icon: rss
-    #     href: posts.xml
-    #     target: _blank  
-  
+
+  page-footer:
+    center: "[Wei Jin](https://peiyang1009.github.io) &copy; <script>document.write(new Date().getFullYear())</script>"
+
   search:
     location: navbar
     type: textbox
-  
+
   reader-mode: false
-
   draft-mode: unlinked
-  
-  repo-url: https://github.com/drganghe/drganghe.github.io
-#  repo-actions: [edit, issue, source]
-  
-  open-graph: true
-  
-  twitter-card: true 
-#  card-style: summary      
-  
-  site-url: "https://drganghe.github.io"
-  
-  google-analytics:
-    tracking-id: "G-G4DYZHP5J7"  # Please delete or replace with your own tracking ID
-    anonymize-ip: true 
 
-bibliography: references.bib
+  open-graph: true
+  twitter-card: true
 
 format:
   html:
@@ -140,6 +57,3 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     email-obfuscation: javascript
-    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
-    include-in-header: "files/includes/_academic.qmd"
-
