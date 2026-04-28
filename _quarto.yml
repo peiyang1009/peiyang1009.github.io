@@ -3,23 +3,33 @@ project:
   output-dir: docs
   resources:
     - "files/"
+  render:
+    - index.qmd
+    - publications.qmd
+    - contact.qmd
+    - teaching.qmd
+    - posts.qmd
+    - media.qmd
+    - notes.qmd
+    - now.qmd
+    - cn.qmd
+    - notable-policy-citations.qmd
+    - letters.qmd
+    - 404.qmd
 
-# Meta
-description-meta: "Wei Jin's personal academic website."
+description-meta: "Wei Jin is an assistant professor at the School of Economics, Nankai University. His research interests include international economics, international trade, and international business."
 author-meta: "Wei Jin"
 
 website:
   title: "Wei Jin"
-  image: "/files/wei-jin-profile.jpeg"
   description: "Wei Jin's personal academic website."
-  llms-txt: true
+  site-url: "https://peiyang1009.github.io"
+  repo-url: "https://github.com/peiyang1009/peiyang1009.github.io"
 
   navbar:
     background: light
 
     left:
-#      - text: Home
-#        href: index.qmd
       - text: About
         menu:
           - text: News
@@ -42,8 +52,7 @@ website:
           - text: Recognition
             href: posts.qmd#category=recognition
           - text: Grants
-            href: https://weijinsite.weebly.com/
-            target: _blank
+            href: publications.qmd
 
       - text: Teaching
         href: teaching.qmd
@@ -71,17 +80,14 @@ website:
         href: cn.qmd
 
     right:
-      - text: "**CV**"
+      - text: "CV"
         href: files/Wei-Jin-CV.pdf
         target: _blank
       - icon: github
         href: https://github.com/peiyang1009/peiyang1009.github.io
         target: _blank
-      - text: "{{< fa solid globe >}}"
+      - icon: globe
         href: https://weijinsite.weebly.com/
-        target: _blank
-      - icon: rss
-        href: posts.xml
         target: _blank
 
   page-navigation: true
@@ -95,15 +101,8 @@ website:
 
   reader-mode: false
   draft-mode: unlinked
-
-  repo-url: https://github.com/peiyang1009/peiyang1009.github.io
-
   open-graph: true
   twitter-card: true
-
-  site-url: "https://peiyang1009.github.io"
-
-bibliography: references.bib
 
 format:
   html:
@@ -118,5 +117,3 @@ format:
     link-external-icon: false
     link-external-newwindow: true
     email-obfuscation: javascript
-    link-external-filter: '^(?:http:|https:)\/\/peiyang1009\.github\.io\/custom'
-    include-in-header: "files/includes/_academic.qmd"
