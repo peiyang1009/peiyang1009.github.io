@@ -93,7 +93,15 @@ website:
   page-navigation: true
 
   page-footer:
-    center: "[Wei Jin](https://peiyang1009.github.io) &copy; <script>document.write(new Date().getFullYear())</script>"
+    center: |
+      [Wei Jin](https://peiyang1009.github.io) &copy; <script>document.write(new Date().getFullYear())</script>
+      <br>
+      <span style="font-size: 0.9em; color: #888;">
+        👤 Total visitors <span id="busuanzi_value_site_uv"></span>
+        &nbsp; | &nbsp;
+        👁️ Total views <span id="busuanzi_value_site_pv"></span>
+      </span>
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   search:
     location: navbar
