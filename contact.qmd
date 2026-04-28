@@ -1,29 +1,22 @@
 ---
 title: "Contact"
-description-meta: "Reach out to me with questions and comments"
+description-meta: "Contact information for Wei Jin."
 title-block-banner: false
-comments:
- giscus: 
-   repo: drganghe/drganghe.github.io
+toc: false
 ---
 
-<center>
+## Contact Information
 
-**Gang He**
+Email: wei.jin.economics [at] gmail.com
 
-Marxe School of Public and International Affairs
+Email: wei.jin.economics [at] foxmail.com
 
-Baruch College
+Email: wei.jin [at] nankai.edu.cn
 
-City University of New York
+## Address
 
-135 East 22nd Street, Room 615
-
-New York, NY 10010
-
-Phone: +1 (646) 660-6716
-
-Email: <gang.he@baruch.cuny.edu>
-
-
-</center>
+School of Economics, Nankai University  
+No. 94 Weijin Road  
+Nankai District  
+Tianjin 300071  
+P.R. China
